@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="board">
+<!-- 여러곳에서 사용할 공통된 sql -->
+<sql id="search">
+<!-- searchType 이 null 이 아니면 -->
+<if test="searchType != null">
+<if test="searchType=='t'.toString()">
+where upper(title) like '%' ||#{keyword}||'%'
+</if>
+<if test="searchType=='c'.toString()">
+where upper(content) like '%' ||#{keyword}||'%'
+</if>
+<if test="searchType=='w'.toString()">
+where upper(writer) like '%' ||#{keyword}||'%'
+</if>
+<if test="searchType=='tc'.toString()">
+where upper(title) like '%' ||#{keyword}||'%'or
+	upper(content) like '%' ||#{keyword}||'%'
+
+</if>
+<if test="searchType=='cw'.toString()">
+where upper(content) like '%' ||#{keyword}||'%'or
+	upper(writer) like '%' ||#{keyword}||'%'
+
+</if>
+</if>
+</sql>
+ <insert id="insert" parameterType="BoardVO">
+ insert into springboard(bno, title, content, writer, ip) 
+ values(boardseq.nextval, #{title},#{content}, #{writer}, #{ip})
+ 
+</insert>
+<!-- <select id="getAll" 
+resultType="BoardVO">
+select*
+from springboard 
+select>-->
+
+<!--<select id="totalCount"
+resultType="java.lang.Integer">
+select count(*)
+from springboard
+</select>-->
+
+<select id="totalCount"
+resultType="java.lang.Integer"
+parameterType="SearchCriteria">
+select count(*)
+from springboard
+<include refid="search"></include>
+</select>
+
+<!-- criteria ㅡㄹㄹ 매개변수로 받아서 해당하는 페이지 번호에 출력해야 할 데이터ㅏ를 가져오는 sql -->
+<!-- 
+<select id="getList" resultType="BoardVO" parameterType="Criteria">
+select bno, title , content, writer, regdate,readcnt, ip from(select rownum rnum, bno, title, content, writer, regdate, readcnt,ip
+from(select* 
+from springboard
+order by bno desc))
+where rnum &gt;=#{pageStart} and rnum &lt;=#{pageStart}+#{perPageNum} -1
+</select>
+ -->
+ <!-- rjator whrjsrhk rjatordjfmf dlqfurqkedktj epdlxjfmf ckwdkdhsms ㄴ비 -->
+ 
+
+<!--글번호를 가지고 하나의 데이터를 가져오는 sql -->
+<select id="getList" resultType="BoardVO" parameterType="SearchCriteria">
+select bno, title , content, writer, regdate,readcnt, ip from(select rownum rnum, bno, title, content, writer, regdate, readcnt,ip
+from(select* 
+from springboard
+<include refid="search"></include>
+order by bno desc))
+where rnum &gt;=#{pageStart} and rnum &lt;=#{pageStart}+#{perPageNum} -1
+</select>
+
+
+<select id="getDetail" resultType="BoardVO" parameterType="java.lang.Integer">
+select*
+ from springboard 
+ where bno = #{bno}
+
+</select>
+<!-- 글번호를 가지고 조회수를 1증가시키는 sql -->
+<update id="updateReadcnt" parameterType="java.lang.Integer">
+update springboard
+set readcnt =readcnt +1
+where bno =#{bno}
+</update>
+<!-- 게시글을 수정하느메서드 -->
+<update id="update" parameterType="BoardVO">
+update springboard
+set title=#{title}, content=#{content}, ip=#{ip}, regdate=sysdate
+where bno=#{bno}
+</update>
+
+<delete id="delete" parameterType="java.lang.Integer">
+delete from springboard
+where bno =#{bno}
+</delete>
+
+
+</mapper>

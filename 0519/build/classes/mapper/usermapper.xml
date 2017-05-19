@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="user">
+<select id="login"
+parameterType="LoginDTO"
+resultType="UserVO">
+select id, name
+from springuser
+where id=#{id} and pw=#{pw}
+</select>
+
+<update id="updateSession"
+parameterType="java.util.Map">
+update springuser
+set sessionkey=#{sessionkey},sessionlimit=sysdate+30
+where id=#{id}
+</update>
+
+<select id="checkUser"
+resultType="UserVO"
+parameterType="java.lang.String">
+select id,name
+from springuser
+where sessionkey =#{sessionkey}
+</select>
+
+
+<!-- 회원가입을 처리해주는 SQL -->
+<insert id="insert"
+parameterType="UserVO">
+insert into springuser(id, pw, name, image)
+values(#{id},#{pw},#{name},#{image})
+</insert>
+
+<!-- id 중복체크를 수행해주는 sql -->
+<select id="idcheck" 
+resultType="UserVO" 
+parameterType="java.lang.String">
+select id 
+from springuser
+where id=#{id}
+</select>
+</mapper>

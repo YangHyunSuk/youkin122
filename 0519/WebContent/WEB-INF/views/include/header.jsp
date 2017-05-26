@@ -69,7 +69,9 @@
 					<ul class="treeview-menu">
 						<li><a href="/dbtjd122/board/list"><i class="fa fa-circle-o"></i>
 								목록보기</a></li>
-						<li><a href=""><i class="fa fa-circle-o"></i> 게시물쓰기</a></li>
+										<c:if test="${LOGIN!=null}">
+						<li><a href="/dbtjd122/board/register"><i class="fa fa-circle-o"></i> 게시물쓰기</a></li>
+						</c:if>
 					</ul></li>
 				<c:if test="${LOGIN!=null}">
 					<li><a href="/dbtjd122/board/register"><i

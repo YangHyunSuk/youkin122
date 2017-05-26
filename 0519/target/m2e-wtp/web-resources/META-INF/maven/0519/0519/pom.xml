@@ -20,6 +20,18 @@
 	<!-- 저장소를 설정 다운받을 곳을 설정  -->
 	<dependencies>
 	
+	<dependency>
+	<groupId>org.mongodb</groupId>
+	<artifactId>mongo-java-driver</artifactId>
+	<version>3.2.2</version>
+</dependency>
+
+<dependency>
+	<groupId>org.springframework.data</groupId>
+	<artifactId>spring-data-mongodb</artifactId>
+	<version>1.9.1.RELEASE</version>
+</dependency>
+
 	
 		<dependency>
 			<groupId>org.apache.commons</groupId>

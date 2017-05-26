@@ -11,10 +11,13 @@
 <body>
 <%@ include file="include/header.jsp" %>
 <h2 class="box-title">${msg}</h2>
+<table border="3">
+</table>
 <div data-role='content'>
 <ul><li><a><img width=500 height=500 src="resources/image/Springview.png"></a></ul>
 </div>
-
+<a href="mongo/insert">데이터 삽입 </a><br/>
+<a href="mongo/list">전체 데이터보기 </a><br/>
 <%@ include file="include/footer.jsp" %>
 </body>
 </html>

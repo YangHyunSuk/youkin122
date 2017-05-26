@@ -64,7 +64,7 @@
 			<li>
 				<div>
 					<img src="/dbtjd122/resources/bot/img/slides/1.jpg"
-						alt=" java  배 우 기<br /><a href='#about' class='btn btn-skin btn-slide'>바 로 가 기</a>">
+						alt=" 나 의 소 개<br /><a href='#about' class='btn btn-skin btn-slide'>바 로 가 기</a>">
 				</div>
 			</li>
 			<li>
@@ -76,7 +76,7 @@
 			<li>
 				<div>
 					<img src="/dbtjd122/resources/bot/img/slides/3.jpg"
-						alt=" W E B 배 우 기<br/><a href='#' class='btn btn-skin btn-slide'>바 로 가 기</a>">
+						alt=" 피 드 백<br/><a href='#contact' class='btn btn-skin btn-slide'>바 로 가 기</a>">
 				</div>
 			</li>
 		</ul>
@@ -91,7 +91,7 @@
 				<div class="row">
 					<div class="col-md-2">
 						<div class="site-logo">
-							<a href="footer"><img src="/dbtjd122/resources/bot/img/logo.jpg"
+							<a href="/dbtjd122/home2"><img src="/dbtjd122/resources/bot/img/logo.jpg"
 								alt="" /></a>
 						</div>
 					</div>
@@ -110,11 +110,11 @@
 						<div class="collapse navbar-collapse" id="menu">
 							<ul class="nav navbar-nav navbar-right">
 								<li class="active"><a href="#intro">Home</a></li>
-								<li><a href="#about">아 붓</a></li>
+								<li><a href="#about">나의 소개</a></li>
 								<li><a href="#service">서비스</a></li>
-								<li><a href="#works">워크 </a></li>
+								<li><a href="#works">사용한 기능</a></li>
 
-								<li><a href="#contact">콘텐츠</a></li>
+								<li><a href="#contact">피드백</a></li>
 								<li class="dropdown nav-toggle"><a href="#"
 									class="dropdown-toggle" data-toggle="dropdown">참고 페이지<b
 										class="caret"></b></a>
@@ -160,7 +160,7 @@
 								<p>공백</p>
 								<div class="social-icons">
 									<ul class="team-social">
-										<li class="social-facebook"><a href="#"><i
+										<li class="social-facebook"><a href="facebook.com/dbtjd122"><i
 												class="fa fa-facebook"></i></a></li>
 										<li class="social-twitter"><a href="#"><i
 												class="fa fa-twitter"></i></a></li>
@@ -196,8 +196,7 @@
 						<div class="team-wrapper-big wow bounceInUp" data-wow-delay="0.8s">
 							<div class="team-wrapper-overlay">
 								<h5>Heck Steven</h5>
-								<p>Graeco voluptua sed ea, malorum quaeque cotidieque per
-									eu, quo id possit dissentias.</p>
+								<p>가나다라마바사</p>
 								<div class="social-icons">
 									<ul class="team-social">
 										<li class="social-facebook"><a href="#"><i
@@ -216,8 +215,7 @@
 						<div class="team-wrapper-big wow bounceInUp" data-wow-delay="1s">
 							<div class="team-wrapper-overlay">
 								<h5>Adrian Dawn</h5>
-								<p>Graeco voluptua sed ea, malorum quaeque cotidieque per
-									eu, quo id possit dissentias.</p>
+								<p>가나다라마바사</p>
 								<div class="social-icons">
 									<ul class="team-social">
 										<li class="social-facebook"><a href="#"><i
@@ -260,9 +258,9 @@
 				<div class="col-lg-8 col-lg-offset-2">
 					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.4s">
 						<div class="section-heading text-center">
-							<h2 class="h-bold">Services</h2>
+							<h2 class="h-bold">전체 기능</h2>
 							<div class="divider-header"></div>
-							<p>내용 ~설정</p>
+							<p>전체 기능</p>
 						</div>
 					</div>
 				</div>
@@ -281,10 +279,10 @@
 									<span class="pe-7s-monitor pe-5x"></span>
 								</div>
 								<div class="service-desc">
-									<h5>Web Design</h5>
+									<h5>부트스트랩</h5>
 									<p>Ad denique euripidis signiferumque vim, iusto admodum
 										quo cu. No tritani neglegentur mediocritatem duo.</p>
-									<a href="#" class="btn btn-skin">Learn more</a>
+									<a href="#" class="btn btn-skin">자세히 알아보기</a>
 								</div>
 							</div>
 						</div>
@@ -296,10 +294,10 @@
 									<span class="pe-7s-camera pe-5x"></span>
 								</div>
 								<div class="service-desc">
-									<h5>Photography</h5>
+									<h5>체험</h5>
 									<p>Ad denique euripidis signiferumque vim, iusto admodum
 										quo cu. No tritani neglegentur mediocritatem duo.</p>
-									<a href="#" class="btn btn-skin">Learn more</a>
+									<a href="#" class="btn btn-skin">자세히 알아보기</a>
 								</div>
 							</div>
 						</div>
@@ -311,10 +309,10 @@
 									<span class="pe-7s-note pe-5x"></span>
 								</div>
 								<div class="service-desc">
-									<h5>Graphic design</h5>
+									<h5>세부 기능 설명</h5>
 									<p>Ad denique euripidis signiferumque vim, iusto admodum
 										quo cu. No tritani neglegentur mediocritatem duo.</p>
-									<a href="#" class="btn btn-skin">Learn more</a>
+									<a href="#" class="btn btn-skin">자세히 알아보기</a>
 								</div>
 							</div>
 						</div>
@@ -326,10 +324,10 @@
 									<span class="pe-7s-phone pe-5x"></span>
 								</div>
 								<div class="service-desc">
-									<h5>Mobile apps</h5>
+									<h5>모바일 가능</h5>
 									<p>Ad denique euripidis signiferumque vim, iusto admodum
 										quo cu. No tritani neglegentur mediocritatem duo.</p>
-									<a href="#" class="btn btn-skin">Learn more</a>
+									<a href="#" class="btn btn-skin">자세히 알아보기</a>
 								</div>
 							</div>
 						</div>
@@ -394,7 +392,7 @@
 				<div class="col-lg-8 col-lg-offset-2">
 					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.4s">
 						<div class="section-heading text-center">
-							<h2 class="h-bold">Portfolio</h2>
+							<h2 class="h-bold">참고한 페이지</h2>
 							<div class="divider-header"></div>
 							<p>Lorem ipsum dolor sit amet, agam perfecto sensibus usu at
 								duo ut iriure.</p>
@@ -476,19 +474,14 @@
 				<div class="col-md-12">
 					<div class="testimonialslide clearfix flexslider">
 						<ul class="slides">
-							<li><blockquote>Usu ei porro deleniti
-									similique, per no consetetur necessitatibus. Ut sed augue
-									docendi alienum, ex oblique scaevola inciderint pri, unum movet
-									cu cum. Et cum impedit epicuri</blockquote>
+							<li><blockquote>뭐라는건지
+									가나다라마바사</blockquote>
 								<h4>
-									Daniel Dan <span>&#8213; MA System</span>
+									양 현 석 <span>&#8213; 글씨를</span>
 								</h4></li>
-							<li><blockquote>Usu ei porro deleniti
-									similique, per no consetetur necessitatibus. Ut sed augue
-									docendi alienum, ex oblique scaevola inciderint pri, unum movet
-									cu cum. Et cum impedit epicuri</blockquote>
+							<li><blockquote>가나다라마바사</blockquote>
 								<h4>
-									Mark Wellbeck <span>&#8213; AC Software </span>
+									양 유 성 <span>&#8213;쓰란거니 </span>
 								</h4></li>
 						</ul>
 					</div>
@@ -584,7 +577,7 @@
 
 
 							<ul class="team-social">
-								<li class="social-facebook"><a href="#"><i
+								<li class="social-facebook"><a href="https://www.facebook.com/dbtjd122"><i
 										class="fa fa-facebook"></i></a></li>
 								<li class="social-twitter"><a href="#"><i
 										class="fa fa-twitter"></i></a></li>

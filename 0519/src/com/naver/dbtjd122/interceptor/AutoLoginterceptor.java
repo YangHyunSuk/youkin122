@@ -45,7 +45,7 @@ public class AutoLoginterceptor implements HandlerInterceptor {
 			UserVO vo = userDAO.checkUser(cookie.getValue());	
 			// 로그인 시켜줬던거
 			session.setAttribute("LOGIN", vo);
-			///자동로그인을 ㅅ수행하면 autologin에 값을저장
+			///자동로그인을 수행하면 autologin에 값을저장
 			session.setAttribute("autologin", 1);
 		}
 		return true;

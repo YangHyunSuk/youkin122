@@ -30,7 +30,8 @@ public class LoginInterceptor implements HandlerInterceptor {
 		if (userVO == null) {
 			// 실패시
 			session.setAttribute("fail", "아이디가 없거나 비밀번호 틀렸다");
-			arg1.sendRedirect("/dbtjd122/user/login");
+			arg1.sendRedirect("/dbtjd122/user/login");		
+
 		} else {
 			session.removeAttribute("fail");
 			session.setAttribute("LOGIN", userVO);
@@ -67,6 +68,7 @@ public class LoginInterceptor implements HandlerInterceptor {
 
 		}
 	}
+	
 	// Controller 의 요청이 처리되기 전에 호출되는메서드
 
 	@Override
@@ -80,5 +82,4 @@ public class LoginInterceptor implements HandlerInterceptor {
 		// false를 리턴하면 Controller로 가지않는다
 		return true;
 	}
-
 }

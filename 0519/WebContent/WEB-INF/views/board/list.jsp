@@ -142,7 +142,7 @@ $(function(){
 	var searchBtn =document.getElementById("searchBtn");
 	var searchType=document.getElementById("searchType");
 	var keyword=document.getElementById("keyword");
-	searchBtn.onclick=function(){location.href="dbtjd122/board/list?page=1&perPageNum=${pageMaker.criteria.perPageNum}&searchType="+searchType.value+"&keyword="+keyword.value;
+	searchBtn.onclick=function(){location.href="/dbtjd122/board/list?page=1&perPageNum=${pageMaker.criteria.perPageNum}&searchType="+searchType.value+"&keyword="+keyword.value;
 	};
 });
 </script>

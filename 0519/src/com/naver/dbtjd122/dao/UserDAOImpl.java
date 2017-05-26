@@ -43,7 +43,6 @@ private SqlSession sqlSession;
 
 	@Override
 	public UserVO idcheck(String id) {
-		// TODO Auto-generated method stub
 		return sqlSession.selectOne("user.idcheck",id);
 	}
 }

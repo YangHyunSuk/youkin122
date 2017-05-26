@@ -83,7 +83,7 @@
 					<li><a href="/dbtjd122/user/register"><i
 							class="fa fa-circle-o text-red"></i> <span>회원가입</span></a></li>
 				</c:if>
-<li><a href="/dbtjd122/home2"><i class="fa fa-circle-o text-red"></i> <span>Home2(공부내용)</span></a></li>
+<li><a href="/dbtjd122/home2"><i class="fa fa-circle-o text-red"></i> <span>개발자 홈페이지 </span></a></li>
 <li><a href="/dbtjd122/board/list"><i class="fa fa-circle-o text-yellow"></i> <span>list</span></a></li>
 <li><a href="/dbtjd122/music/yangmusic"><i class="fa fa-circle-o text-yellow"></i> <span>음악 감상</span></a></li>						
 <li><a href="/dbtjd122/user/jido"><i class="fa fa-circle-o text-yellow"></i> <span>상담소 위치</span></a></li>
@@ -128,10 +128,10 @@
 					<c:if test="${LOGIN==null}">
 						<div class="box-header with-border">
 								<a href="/dbtjd122/user/register"><h3 class="box-title">회원가입</h3></a>
-							
-					<li><a href="/dbtjd122/user/kakao"><img height="40" src="/dbtjd122/resources/naverimg/o.jpg" ></a></li>
-		
-					<li><a href="/dbtjd122/user/callback"><img height="50" src="/dbtjd122/resources/naverimg/icon1.PNG"/></a></li>
+							<br/>
+					<a href="/dbtjd122/user/kakao"><img height="40" src="/dbtjd122/resources/naverimg/o.jpg" ></a>
+					<a href="/dbtjd122/user/callback"><img height="50" src="/dbtjd122/resources/naverimg/icon1.PNG"/></a>
+					<br/>
 					<a href="/dbtjd122/"><i class="fa fa-dashboard"></i> Home</a>
 					<a href="/dbtjd122/board/list"><i class="fa fa-dashboard"></i> list</a>
 			

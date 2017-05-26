@@ -10,7 +10,7 @@
 </head>
 <body>
 <%@ include file="include/header.jsp" %>
-<h5 class="box-title">${msg}</h5>
+<h2 class="box-title">${msg}</h2>
 <div data-role='content'>
 <ul><li><a><img width=500 height=500 src="resources/image/Springview.png"></a></ul>
 </div>

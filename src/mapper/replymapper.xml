@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 원본 글번호를 가지고 모든 댓글을 찾아오는 sql  -->
+<mapper namespace="reply">
+<select id="list" parameterType="java.lang.Integer" resultType="ReplyVO">
+select*
+from reply
+where bno =#{bno}
+order by rno desc
+</select>
+<!-- 숫자가올라감 확인할떄마다 .  -->
+<select id="cnt" parameterType="java.lang.Integer" resultType="java.lang.Integer">
+select count(*)
+from reply
+where bno=#{bno}
+
+</select>
+<!-- 댓글을삽입하는 -->
+<insert id="insert"
+parameterType="ReplyVO">
+insert into reply
+values(replyseq.nextval, #{bno},#{replytext},#{replyer}, sysdate)
+</insert>
+
+<!-- 댓글을수정하는 -->
+
+<update id="update"
+parameterType="ReplyVO">
+update reply
+set replytext=#{replytext}
+where rno = #{rno}
+</update>
+
+<delete id="delete"
+parameterType="java.lang.Integer">
+delete from reply
+where rno =#{rno}
+</delete>
+
+
+</mapper>
